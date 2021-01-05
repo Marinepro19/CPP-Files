@@ -1,9 +1,11 @@
 #include <iostream>
 
-void printSomething(int x){
-  std::cout << x << std::endl;
+int printSomething(int x){
+  return x*2;
 }
 int main(){
- printSomething(42);
+ std::cout << printSomething(42) << std::endl;
+ std::cout << printSomething(38) << std::endl;
+ std::cout << printSomething(10) << std::endl;
   return(0);
 }
